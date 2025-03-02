@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando Formulários</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <div>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" autocomplete="name" required placeholder="Nome completo" minlength="8" maxlength="15">
+        </div>
+        <div>
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Limpar Formulário">
+        </div>
+        <label for="iestado">Estado</label>
+        <select name="estado" id="iestado">
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio De Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="MA">Maranhão</option>
+                    <option value="RN">Rio Grande Do Norte</option>
+                    <option value="PE">Pernabuco</option>
+                </optgroup>
+        </select>
+        <div>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="proff">
+            <datalist id="proff">
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+                <option >Adiministrador</option>
+                <option >Contador</option>
+            </datalist>
+        </div>
+        <div>
+            <label >Cargo</label>
+            <input type="text" name="cargo" id="icargo" list="carg">
+            <datalist id="carg">
+                <option >Estoquista</option>
+                <option >Vendedor</option>
+                <option >Gerencia</option>
+                <option>Caixa</option>
+            </datalist>
+        </div>
+
+    </form>
+   
+    
+</body>
+</html>
