@@ -48,7 +48,8 @@
     height: 100%;
     border-radius: 10px;
     box-shadow: 3px 3px 10px var(--cor-secundaria);
-    background-color: #050a16a2;
+    background: var(--cor-secundaria) url(../imagens/bricks-147309_1280.png) no-repeat center center;
+    background-size: cover;
 }
 .caixa-email, .caixa-senha{
     width: 100%;
