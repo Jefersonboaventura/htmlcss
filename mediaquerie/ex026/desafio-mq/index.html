@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/portrait.css" media="screen and (orientation:portrait)">
+    <link rel="stylesheet" href="estilos/landscape.css" media="screen and (orientation:landscape)">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <main id="container">
+        
+        <form action="cadastro.php" method="get">
+            <div id="principal">
+                <div class="caixa-login">
+                    <div id="imagem">
+
+                    </div>
+                    <div class="caixa-email">
+                        <h1>Login</h1>
+                        <label for="iemail">
+                            Email
+                        </label>
+                        <input type="email" name="email" id="iemail" required placeholder="Digite seu email" autocomplete="off">
+                    </div>
+                    <div class="caixa-senha">
+                        <label for="isenha">
+                            Senha
+                        </label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" placeholder="Digite sua senha">
+                    </div>
+                    <div class="entrar">
+                         <input type="submit" value="Entrar">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
