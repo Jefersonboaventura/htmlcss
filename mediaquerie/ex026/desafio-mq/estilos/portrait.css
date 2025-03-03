@@ -105,6 +105,10 @@
 h1{
     padding: 10px;
     color: azure;
+   font-size: 1em;
+}
+p{
+    color: azure;
 }
 
 #img-landscape{

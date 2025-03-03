@@ -36,8 +36,9 @@
 #img-landscape{
     width: 50vw;
     height: 100vh;
-    background: var(--cor-principal) url(../imagens/predio2.png) no-repeat center;
+    background: var(--cor-secundaria) url(../imagens/predio2.png) no-repeat center;
     background-size: cover;
+
 }
 
 .caixa-email, .caixa-senha{
@@ -84,7 +85,6 @@
     padding: 10px;
     width: 300px;
     border-radius: 10px;
-    background-color: ;
     border-radius: 10px;
     border: 1px solid azure;
     box-shadow: 2px 2px 5px #03060dc5;
@@ -93,10 +93,19 @@
     background-color: var(--cor-primaria);
     cursor: pointer;
 }
+.entrar input:hover{
+    background-color: #034C8C;
+}
 h1{
     color: azure;
+    font-size: 1.5em;
+    display: block;
 }
-
+p{
+    color: azure;
+    margin-bottom: 30px;
+    text-align: center;
+}
 
 
 
