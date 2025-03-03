@@ -1,1 +1,30 @@
 @charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span#burguer{
+    display: none;
+}
+
+menu#items{
+    display: block;
+}
+
+menu#items a{
+    display: inline-block;
+    border-radius: 10px;
+    width: 100px;
+}
+
+menu#items ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+main{
+    width: 850px;
+}
+
