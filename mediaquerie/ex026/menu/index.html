@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu responsivo</title>
+</head>
+<body> 
+    <header class="header">
+        <nav class="navbar">
+            <h1>Meu Curriculo</h1>
+            <div class="toggle-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <a href="">
+                    <li>Sobre</li>
+                </a>
+                <a href="">
+                    <li>Projetos</li>
+                </a>
+                <a href="">
+                    <li>Contato</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".nav-links");
+            menu.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
