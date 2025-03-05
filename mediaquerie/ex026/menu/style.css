@@ -6,12 +6,15 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+.header{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    background-color: rgba(12, 12, 12, 0.979);
     color: #f2f2f2;
 }
 .bar{
@@ -24,7 +27,6 @@
 .nav-links{
     display: flex;
     gap: 30px;
-    padding: 15px;
     list-style-type: none;
     font-size: 1.1em;
     font-weight: bold;
@@ -33,6 +35,7 @@
 .nav-links a{
     text-decoration: none;
     color: #f2f2f2;
+    padding: 15px;
 }
 
 .toggle-menu{
@@ -46,32 +49,36 @@
         position: absolute;
         top: 60px;
         right: 0;
-        background-color:rgba(0, 0, 0, 0.945);
+        gap: 0px;
+        background-color: #24252a;
+        box-shadow: 0px 3px 10px #464646;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         width: 100vw;
-        height: 100%;
+        height: 50%;
         text-align: center;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
-    .nav-links li{
-        width: 100%;
-        height: 30px;
-        display: flex;
+   
+    nav-links li:last-child{
+        border: none;
+    }
+    .nav-links .link{
+        display: inline-flex;
+        border-bottom: 1px solid rgba(77, 77, 77, 0.774);  
         align-items: center;
         justify-content: center;
-        
+        width: 100%;
+        height: 100%;
     }
 
-    .nav-links a{
-        display: block;
-        border-bottom: 1px solid #000000a9;
-        padding: 15px;
-        
+    .nav-links a:hover{
+        background-color: #f2f2f27c;
     }
 
     .toggle-menu{
         display: block;
-        flex-direction: column;
     }
 
     .nav-links.active{
