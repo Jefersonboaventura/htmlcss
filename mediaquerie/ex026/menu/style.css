@@ -1,10 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .header{
     background-color: #24252a;
@@ -32,15 +32,28 @@
     font-weight: bold;
 }
 
-.nav-links a{
+.nav-links .link{
     text-decoration: none;
-    color: #f2f2f2;
+    text-shadow: 0px 3px 9px #34eea04f;
+    color: #2FE097;
     padding: 15px;
+    font-family: 'Orbitron', sans-serif;
+    width: 6.5rem;
+    text-align: center;
+    border-radius: 5px;
 }
-
+.nav-links .link:hover{
+    background-color: #3636367c;
+}
 .toggle-menu{
     cursor: pointer;
     display: none;
+}
+.navbar h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    color: #2FE097;
+    text-shadow: 0px 3px 9px #34eea04f;
 }
 
 @media screen and (max-width: 768px) {
@@ -60,6 +73,11 @@
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
+
+    .navbar h1{
+        font-size: 1rem;
+        text-align: center;
+    }
    
     nav-links li:last-child{
         border: none;
@@ -74,7 +92,7 @@
     }
 
     .nav-links a:hover{
-        background-color: #f2f2f27c;
+        background-color: #4949497c;
     }
 
     .toggle-menu{
