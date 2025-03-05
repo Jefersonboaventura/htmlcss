@@ -29,17 +29,17 @@
     display: flex;
     gap: 30px;
     list-style-type: none;
-    font-size: 1.1em;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .nav-links .link{
     text-decoration: none;
-    text-shadow: 0px 3px 9px #34eea04f;
-    color: #2FE097;
+    text-shadow: 0px 3px 9px #1f1f1f96;
+    color: #f2f2f2;
     padding: 15px;
     font-family: 'Orbitron', sans-serif;
-    width: 6.5rem;
+    width: 7.7rem;
     text-align: center;
     border-radius: 5px;
 }
@@ -50,21 +50,13 @@
     cursor: pointer;
     display: none;
 }
+
 .navbar h1{
     font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
-    color: #2FE097;
-    text-shadow: 0px 3px 9px #34eea04f;
+    color: #f2f2f2;
+    width: 52%;
+    text-shadow: 0px 3px 9px #1f1f1f96;
+    border-right: 1px solid #f2f2f2;
 }
 
-.toggle-menu.active .bar:nth-child(1){
-    transform: translateY(9px) rotate(45deg);
-}
-
-.toggle-menu.activ .bar:nth-child(2){
-    opacity: 0;
-}
-
-.toggle-menu.active .bar:nth-child(3){
-    transform: translateY(-9px) rotate(-45deg);
-}

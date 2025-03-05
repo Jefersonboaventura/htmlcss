@@ -17,9 +17,16 @@
     transition: transform 0.3s ease-in-out;
 }
 
+body{
+    overflow: hidden;
+}
+
+
 .navbar h1{
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
+    border-right: none;
+    width: 100%;
 }
 
 nav-links li:last-child{
@@ -34,7 +41,7 @@ nav-links li:last-child{
     height: 100%;
 }
 
-.nav-links a:hover{
+.nav-links .link:hover{
     background-color: #4949497c;
 }
 
@@ -44,4 +51,20 @@ nav-links li:last-child{
 
 .nav-links.active{
     transform: translateX(0);
+}
+
+.toggle-menu.active .bar:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+    width: 20px;
+    transition:  transform 0.2s ease-in-out;
+}
+
+.toggle-menu.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.toggle-menu.active .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+    width: 20px;
+    transition: transform 0.2s ease-in-out;
 }
