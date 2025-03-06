@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
+.apresentação{
+    height: 50%;
+}
 .apresentação p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    color: #f2f2f2;
 }
 
 .foto-perfil{
