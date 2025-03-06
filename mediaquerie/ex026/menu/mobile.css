@@ -91,9 +91,6 @@ nav-links li:last-child{
     align-items: center;
     flex-direction: column;
 }
-.apresentação{
-    width: 95%;
-}
 
 .foto-perfil{
     width: 100px;
@@ -107,7 +104,7 @@ nav-links li:last-child{
 .apresentação p{
     display: block;
     font-family: 'inter', sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #dddddd;
     text-align: justify;
     line-height: 1.5rem;
