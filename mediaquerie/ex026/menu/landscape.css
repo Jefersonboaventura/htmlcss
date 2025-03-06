@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.apresentação p{
+    font-size: 0.7rem;
+}
+
+.foto-perfil{
+    width: 80px;
+    height: 80px;
+}
+
+.caixa-btn{
+    height: 100px;
+}
+
+.btn-download{
+    width: 100px;
+    height: 30px;
+}
