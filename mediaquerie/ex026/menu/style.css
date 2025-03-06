@@ -80,11 +80,6 @@ p{
     font-weight: bold;
     font-family: 'inter', sans-serif;
     cursor: pointer;
-    margin: 20px;
-}
-
-.btn-download:hover{
-    
 }
 
 .btn-download img{
