@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main class="container">
+        <h1>Seja Bem Vindo de volta!</h1>
+        <section class="caixa-login">
+            <p id="menssagem"></p>
+            <fieldset>
+                <legend>Login</legend>
+                <form action="login.php">
+                    <div class="caixa-email">
+                        <label for="iemail"></label>
+                        <input type="email" name="email" id="iemail" required placeholder="Seu Email"><img src="imagens/person_16dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.png" alt="icone pessoa" class="img-email">
+                    </div>
+                    <div class="caixa-senha">
+                        <label for="isenha"></label>
+                        <input type="password" name="senha" id="isenha" required placeholder="Senha" minlength="8" maxlength="20">
+                        <img src="imagens/lock_open_16dp_1F1F1F_FILL0_wght400_GRAD0_opsz20.png" alt="icone cadeado" class="img-senha">
+                    </div>
+                    <div class="caixa-entrar">
+                        <input type="submit" value="Entrar" id="entrar" onclick="pegarDados()">
+                        
+                            <a href="#" class="link">Esqueci minha senha</a>
+                            <a href="#" class="link">Cadastrar-me</a>
+                        </div>
+                   
+            </fieldset>
+            </form>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
